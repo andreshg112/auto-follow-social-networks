@@ -4,7 +4,8 @@
     for (var i = 0; i < contenedores.length; i++) {
         var contenedor = contenedores[i];
         var botones = contenedor.getElementsByClassName('follow-button');
-        for (var j = 0; j < botones.length; j++) {
+        var maximo = (botones.length < 100) ? botones.length : 100;
+        for (var j = 0; j < maximo; j++) {
             var boton = botones.item(j);
             boton.click();
             setTimeout(function () {
