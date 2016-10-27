@@ -8,5 +8,8 @@
         if (boton.textContent == 'Seguir') {
             boton.click();
         }
+        setTimeout(function () {
+            console.log('Usuario ', i);
+        }, 250);
     }
 })();
